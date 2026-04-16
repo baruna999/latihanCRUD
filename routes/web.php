@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
+// untuk contoh perusahaan
+use App\Http\Controllers\PerusahaanController;
+Route::resource('perusahaan', PerusahaanController::class);
+Route::get('/perusahaan/destroy/{id}', [PerusahaanController::class,'destroy']);
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
